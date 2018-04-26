@@ -1,0 +1,305 @@
+body {
+	font-family: "Trebuchet MS";
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 13px;
+	margin-left: 10px;
+}
+input, button, {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    border: none;
+}
+
+.headmain {
+	margin-left: 325px;
+	font-size: 45px;
+}
+
+.container {
+	display: flex;
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.items,.params,.numbers,.time,.final-calculation {
+	margin-left: 8px;
+	border-radius: 10px;
+	background-color: #a8abaf;
+}
+
+.items {
+	justify-content: space-between;
+	align-items: center;
+	width: 205px;
+	height: 435px;
+	border: 1px solid black;
+	margin-left: 80px;
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 178px;
+	height: 45px;
+	margin-bottom: 10px;
+	margin-left: 13px;
+}
+
+.choise, p {
+	
+	float: right;
+}
+
+.choise {
+	margin-right:  2px;
+}
+
+.choise-last {
+	margin-left: 26px;
+}
+
+.item-image {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.params {
+	width: 146px;
+	height: 435px;
+	border: 1px solid black;
+}
+
+.numbers {
+	width: 98px;
+	height: 435px;
+	border: 1px solid black;
+}
+.number {
+	margin-bottom: 30px;
+}
+
+.left:before {
+  content: "\e909";
+  color: #0056f7;
+}
+
+.right:before {
+  content: "\e90a";
+  color: #f700e6;
+}
+
+.time {
+	width: 330px;
+	height: 221px;
+	border: 1px solid black;
+}
+
+.sel {
+	width: 100px;
+	height: 30px;
+}
+
+.calculation {
+	position: absolute;
+	width: 330px;
+	height: 207px;
+	left: 670px;
+	top: 342px;
+	background-color: #2cc427;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 0;	
+	border-radius: 10px;
+}
+
+
+
+
+.cost-img {
+	width: 60px;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.cost {
+	width: 300px;
+	height: 80px;	
+	font-size: 25px;
+	color: white;
+	border-bottom: 2px dotted white;
+}
+
+.cost-span {
+	font-size: 15px;
+}
+
+.skidka {
+	width: 300px;
+	height: 80px;
+	font-size: 25px;
+	color: white;
+}
+
+.skidka-img {
+	width: 40px;
+	height: 40px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.skidka-span {
+	font-size: 15px;
+}
+
+
+.cost-p {
+	margin-right: 22px;
+	margin-top: 35px;
+}
+
+.skidka-p {
+	margin-right: 24px;
+	margin-top: 23px;	
+}
+
+
+.btn-zakazat {
+	width: 290px;
+	height: 27px;
+	box-shadow: 2px 3px 5px black;
+	background-color: white;	
+	text-align: center;
+	font-size: 25px;
+	font-weight: 500;
+	padding: 10px;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+	transition: .4s;
+}
+
+.btn-zakazat:hover {
+	color: yellow;
+	background-color: black;
+	transition: .4s;
+}
+
+.parametres {
+	width: 105px;
+	height: 34px;
+	margin: 20px;
+	line-height: 0;
+
+}
+
+.btn-image {
+	width: 20px;
+	height: 20px;
+	margin-left: -8px;
+}
+
+.parametres p {
+	font-size: 11px;
+}
+
+.number-item {
+	width: 92px;
+	height: 28px;
+	margin: auto;
+}
+
+.text-number {
+	margin-top: 25px;
+	width: 80px;
+	height: 26px;
+	margin-left: auto;
+}
+
+.time h2 {
+	text-align: left;
+}
+
+.time {
+	display: inline-block;
+	text-align: center;
+}
+.side {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.left-side {
+	float: left;
+	margin-left: 10px;
+}
+
+.right-side {
+	float: right;
+	margin-right: 10px;
+}
+
+.time-selection {
+	margin-top: 9px;
+}
+
+.phone-number {
+margin-left: 10px;
+	margin-top: 10px;
+}
+
+.e-mail-input {
+margin-left: 10px;	
+	margin-top: 8px;
+}
+
+.adress input {
+	margin: 0;
+	border-radius: 5px;
+}
+
+.phone-number input {
+	border-radius: 2px;
+}
+
+.e-mail-input input {
+	border-radius: 4px;
+}
+
+#calendar2 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 11px;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+}

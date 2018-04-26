@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Murano</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    
+</head>
+<body>
+    <h1 class="headmain">Расчет стоимости</h1>
+    <div class="container">
+        <div class="items">
+            <h2>Предмет мебели</h2>
+            <div class="item">
+                <img class="item-image" src="assets/imgs/sofa.png">
+                <p class="choise-p">Диван<input id="10" class="choise c1" type="checkbox" name="a"></p>
+            </div>
+            <label id="10"></label>
+            <div class="item">
+                <img class="item-image" src="assets/imgs/armchair.png">
+                <p class="choise-p">Кресло<input class="choise c2" type="checkbox" name="a" id="11"></p>
+            </div>
+            <label id="11"></label>
+            <div class="item">
+                <img class="item-image" src="assets/imgs/bed.png">
+                <p class="choise-p">Матрац<input class="choise c3" type="checkbox" name="a" id="12"></p>
+            </div>
+            <label id="12"></label>
+            <div class="item">
+                <img class="item-image" src="assets/imgs/chair.png">
+                <p class="choise-p">Стул<input class="choise c4" type="checkbox" name="a" id="13"></p>
+            </div>
+            <label id="13"></label>
+            <div class="item">
+                <img class="item-image" src="assets/imgs/carpet.png">
+                <p class="choise-p">Ковер<input class="choise c5" type="checkbox" name="a" id="14"></p>
+            </div>
+            <label id="14"></label>
+            <div class="item">
+                <img class="item-image" src="assets/imgs/ottoman.png">
+                <p class="choise-p">Пуфик<input class="choise-last c6" type="checkbox" name="a" id="15"></p>
+            </div>
+            <label id="15"></label>
+            <div class="item">
+                <img class="item-image" src="assets/imgs/kitchen.png">
+                <p class="choise-p">Кух. уголок<input class="c7" type="checkbox" name="a" id="16"></p>
+            </div>
+            <label id="16"></label>
+        </div>
+        <div class="params">
+            <h2>Параметры</h2>
+            <div class="parametres">
+                <select class="sel"  name="spinkiSelect" id="">
+                    <option label="Со спинкой" value="1" selected="Со спинкой">Со спинкой</option>
+                    <option value="">Без спинки</option>
+                </select>
+            </div>
+            <div style="margin-left: 20px; font-weight: 900; font-size: 30px; margin-top: 10px; ">-</div>
+            <div class="parametres">
+                <select class="sel"  name="mestaSelect" id="">
+                    <option value="" id="123">Односпальный</option>
+                    <option value="" id="124">Двуспальный</option>
+                    <option value="" id="125">Трехспальный</option>
+                </select>
+            </div>
+            <div class="parametres">
+                <select class="sel" name="kolvo-select" id="">
+                    <option value="" id="223">1-местный</option>
+                    <option value="" id="224">2-местный</option>
+                    <option value="" id="225">3-местный</option>
+                </select>
+            </div>
+            <div class="parametres">
+                    <select class="sel"  name="vorsSelect" id="">
+                        <option value="" id="323">Короткий ворс</option>
+                        <option value="" id="324">Длинный ворс</option>
+                        <option value="" id="325">Без ворса</option>
+                    </select>
+            </div>
+            <div style="margin-left: 20px; font-weight: 900; font-size: 30px; margin-top: 10px; ">-</div>
+            <div style="margin-left: 20px; font-weight: 900; font-size: 30px; margin-top: 10px; ">-</div>
+        </div>
+        <div class="numbers">
+            <h2>Количество</h2>
+             <div class="number">
+                            <span class="left"></span>
+                            <input type="number" id="number-1" min="1" max="99" value="1"/>
+                            <span class="right"></span>
+                        </div>
+                        <div class="number">
+                            <span class="left"></span>
+                            <input type="number" id="number-2" min="1" max="99" value="1"/>
+                            <span class="right"></span>
+                        </div>
+                        <div class="number">
+                            <span class="left"></span>
+                            <input type="number" id="number-3" min="1" max="99" value="1"/>
+                            <span class="right"></span>
+                        </div>
+                        <div class="number">
+                            <span class="left"></span>
+                            <input type="number" id="number-4" min="1" max="99" value="1"/>
+                            <span class="right"></span>
+                        </div>
+                        <div class="number">
+                            <span class="left"></span>
+                            <input type="number" id="number-5" min="1" max="99" value="1"/>
+                            <span class="right"></span>
+                        </div>
+                        <div class="number">
+                            <span class="left"></span>
+                            <input type="number" id="number-6" min="1" max="99" value="1"/>
+                            <span class="right"></span>
+                        </div>
+                        <div class="number">
+                            <span class="left"></span>
+                            <input type="number" id="number-7" min="1" max="99" value="1"/>
+                            <span class="right"></span>
+                        </div>
+                  
+        </div>
+        <div class="time">
+            <h2>Дата и время уборки</h2>
+           <div class="side">
+            <div class="left-side">
+                <div  id="datepicker" style="height: 137px;background: white;width: 145px;">
+                    <table id="calendar2">
+                      <thead>
+                        <tr><td>‹<td colspan="5"><td>›
+                        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                      <tbody>
+                    </table>
+                    <script>
+                function Calendar2(id, year, month) {
+                var Dlast = new Date(year,month+1,0).getDate(),
+                    D = new Date(year,month,Dlast),
+                    DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+                    DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+                    calendar = '<tr>',
+                    month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+                if (DNfirst != 0) {
+                  for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+                }else{
+                  for(var  i = 0; i < 6; i++) calendar += '<td>';
+                }
+                for(var  i = 1; i <= Dlast; i++) {
+                  if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+                    calendar += '<td class="today">' + i;
+                  }else{
+                    calendar += '<td>' + i;
+                  }
+                  if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+                    calendar += '<tr>';
+                  }
+                }
+                for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
+                document.querySelector('#'+id+' tbody').innerHTML = calendar;
+                document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+                document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+                document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+                if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+                    document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+                }
+                }
+                Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+            
+                document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+                  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+                }
+                
+                document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+                  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+                }
+                </script>
+                </div>
+                
+            <div class="time-selection">
+                    <input id="time" type="time" style="width: 75px;">
+            </div>
+            </div>
+            <div class="right-side">
+                    <div class="adress">
+                    <input type="text" placeholder="  Введите адрес..." style="height: 25px; padding-bottom: 75px; width: 143px;">
+                </div>
+                <div class="phone-number">
+                    <input type="tel" name="tel"  placeholder="Введите свой телефон..">
+                </div>
+                <div class="e-mail-input">
+                    <input type="text" placeholder="Введите E-mail...">
+                </div>
+            </div>
+            </div> 
+        </div>
+        <div class="calculation">
+            <div class="cost">
+                <img class="cost-img" src="assets/imgs/commerce.png">
+                <p class="cost-p">Cтоимость   -  <span id="text" class="cost-span">0 тнг.</span></p>
+            </div>
+            <div class="skidka">
+                <img class="skidka-img" src="assets/imgs/tag.png">
+                <p class="skidka-p">Ваша скидка  -  <span class="skidka-span">0%</span></p>
+            </div>
+                <a class="btn-zakazat" href="">Заказать</a>
+            </a>
+        </div>
+    </div>  
+
+       <script
+              src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">        
+      </script>
+
+      <script src="assets/scripts/script.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</body>
+</html>
