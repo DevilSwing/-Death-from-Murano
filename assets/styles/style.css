@@ -60,9 +60,6 @@ input, button, {
 	margin-right:  2px;
 }
 
-.choise-last {
-	margin-left: 26px;
-}
 
 .item-image {
 	margin-top: 10px;
@@ -81,6 +78,7 @@ input, button, {
 	border: 1px solid black;
 }
 .number {
+	width: 100%;
 	margin-bottom: 30px;
 }
 
@@ -106,11 +104,9 @@ input, button, {
 }
 
 .calculation {
-	position: absolute;
+	margin-top: 23px;
 	width: 330px;
 	height: 207px;
-	left: 670px;
-	top: 342px;
 	background-color: #2cc427;
 	display: flex;
 	flex-flow: column;
@@ -120,6 +116,12 @@ input, button, {
 	border-radius: 10px;
 }
 
+.last {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 
 
 
