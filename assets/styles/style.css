@@ -134,7 +134,7 @@ input, button, {
 .cost {
 	width: 300px;
 	height: 80px;	
-	font-size: 25px;
+	font-size: 20px;
 	color: white;
 	border-bottom: 2px dotted white;
 }
@@ -147,7 +147,7 @@ input, button, {
 .skidka {
 	width: 300px;
 	height: 80px;
-	font-size: 25px;
+	font-size: 20px;
 	color: white;
 }
 

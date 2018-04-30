@@ -14,65 +14,65 @@
             <h2>Предмет мебели</h2>
             <div class="item">
                 <img class="item-image" src="assets/imgs/sofa.png">
-                <p class="choise-p">Диван<input id="10" class="choise c1 " type="checkbox" name="a" ></p>
+                <p class="choise-p">Диван<input  class="choise js-add-price" type="checkbox" name="a" data-price="225" data-id="sofa" ></p>
             </div>
             <label id="10"></label>
             <div class="item">
                 <img class="item-image" src="assets/imgs/armchair.png">
-                <p class="choise-p">Кресло<input class="choise c2 " type="checkbox" name="a" id="11"></p>
+                <p class="choise-p">Кресло<input class="choise js-add-price" type="checkbox" name="a" data-price="548" data-id="arm"></p>
             </div>
             <label id="11"></label>
             <div class="item">
                 <img class="item-image" src="assets/imgs/bed.png">
-                <p class="choise-p">Матрац<input class="choise c3 " type="checkbox" name="a" id="12"></p>
+                <p class="choise-p">Матрац<input class="choise js-add-price" type="checkbox" name="a" data-price="984" data-id="mat"></p>
             </div>
             <label id="12"></label>
             <div class="item">
                 <img class="item-image" src="assets/imgs/chair.png">
-                <p class="choise-p">Стул<input class="choise c4 " type="checkbox" name="a" id="13"></p>
+                <p class="choise-p">Стул<input class="choise js-add-price" type="checkbox" name="a" data-price="338" data-id="chair"></p>
             </div>
             <label id="13"></label>
             <div class="item">
                 <img class="item-image" src="assets/imgs/carpet.png">
-                <p class="choise-p">Ковер<input class="choise c5 " type="checkbox" name="a" id="14"></p>
+                <p class="choise-p">Ковер<input class="choise js-add-price" type="checkbox" name="a" data-price="754" data-id="carp"></p>
             </div>
             <label id="14"></label>
             <div class="item">
                 <img class="item-image" src="assets/imgs/ottoman.png">
-                <p class="choise-p">Пуфик<input class="choise c6 " type="checkbox" name="a" id="15"></p>
+                <p class="choise-p">Пуфик<input class="choise js-add-price" type="checkbox" name="a" data-price="200" data-id="puf"></p>
             </div>
             <label id="15"></label>
             <div class="item">
                 <img class="item-image" src="assets/imgs/kitchen.png">
-                <p class="choise-p">Кух. уголок<input class="choise c7 " type="checkbox" name="a" id="16"></p>
+                <p class="choise-p">Кух. уголок<input class="choise js-add-price" type="checkbox" name="a" data-price="2000000" data-id="kit"></p>
             </div>
             <label id="16"></label>
         </div>
         <div class="params">
             <h2>Параметры</h2>
             <div class="parametres">
-                <select class="sel"  name="spinkiSelect" id="">
+                <select class="sel js-add-param"  name="spinkiSelect" id="">
                     <option label="Со спинкой" value="1" selected="Со спинкой">Со спинкой</option>
                     <option value="">Без спинки</option>
                 </select>
             </div>
             <div style="margin-left: 20px; font-weight: 900; font-size: 30px; margin-top: 10px; ">-</div>
             <div class="parametres">
-                <select class="sel"  name="mestaSelect" id="">
+                <select class="sel js-add-param"  name="mestaSelect" id="">
                     <option value="" id="123">Односпальный</option>
                     <option value="" id="124">Двуспальный</option>
                     <option value="" id="125">Трехспальный</option>
                 </select>
             </div>
             <div class="parametres">
-                <select class="sel" name="kolvo-select" id="">
+                <select class="sel js-add-param" name="kolvo-select" id="">
                     <option value="" id="223">1-местный</option>
                     <option value="" id="224">2-местный</option>
                     <option value="" id="225">3-местный</option>
                 </select>
             </div>
             <div class="parametres">
-                    <select class="sel"  name="vorsSelect" id="">
+                    <select class="sel js-add-param"  name="vorsSelect" id="">
                         <option value="" id="323">Короткий ворс</option>
                         <option value="" id="324">Длинный ворс</option>
                         <option value="" id="325">Без ворса</option>
@@ -83,39 +83,39 @@
         </div>
         <div class="numbers">
             <h2>Количество</h2>
-             <div class="number">
+                        <div class="number">
                             <span class="left"></span>
-                            <input type="number" id="number-1" min="1" max="99" value="1"/>
+                            <input type="number" id="number-1" min="1" max="99" value="1" data-for="sofa"/>
                             <span class="right"></span>
                         </div>
                         <div class="number">
                             <span class="left"></span>
-                            <input type="number" id="number-2" min="1" max="99" value="1"/>
+                            <input type="number" id="number-2" min="1" max="99" value="1" data-for="arm"/>
                             <span class="right"></span>
                         </div>
                         <div class="number">
                             <span class="left"></span>
-                            <input type="number" id="number-3" min="1" max="99" value="1"/>
+                            <input type="number" id="number-3" min="1" max="99" value="1" data-for="mat"/>
                             <span class="right"></span>
                         </div>
                         <div class="number">
                             <span class="left"></span>
-                            <input type="number" id="number-4" min="1" max="99" value="1"/>
+                            <input type="number" id="number-4" min="1" max="99" value="1" data-for="chair"/>
                             <span class="right"></span>
                         </div>
                         <div class="number">
                             <span class="left"></span>
-                            <input type="number" id="number-5" min="1" max="99" value="1"/>
+                            <input type="number" id="number-5" min="1" max="99" value="1" data-for="carp"/>
                             <span class="right"></span>
                         </div>
                         <div class="number">
                             <span class="left"></span>
-                            <input type="number" id="number-6" min="1" max="99" value="1"/>
+                            <input type="number" id="number-6" min="1" max="99" value="1" data-for="puf"/>
                             <span class="right"></span>
                         </div>
                         <div class="number">
                             <span class="left"></span>
-                            <input type="number" id="number-7" min="1" max="99" value="1"/>
+                            <input type="number" id="number-7" min="1" max="99" value="1" data-for="kit"/>
                             <span class="right"></span>
                         </div>
                   
@@ -215,6 +215,7 @@
       </script>
 
       <script src="assets/scripts/script.js"></script>
+
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
