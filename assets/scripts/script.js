@@ -22,63 +22,125 @@ $(document).ready(function () {
     });
 
 
+
+
+
+
+
+
 var price = 0;
-
-let	check1 = $('#10'),
-	check2 = $('#11'),
-	check3 = $('#12'),
-	check4 = $('#13'),
-	check5 = $('#14'),
-	check6 = $('#15'),
-	check7 = $('#16');
-
-$('.choise').on('change', function () {
-if (check1.checked) {
+var priceBlock = $('.cost-span');
+var sofa = $('#10');
+sofa.on('change', function() {
+console.log(123)
+if (sofa.prop("checked")) {
 price = price + 100;
-} else {
-price = price - 100;
+console.log(price);
+$(priceBlock).text(price)
 }
-if (check2.checked) {
-price = price + 100;
-} else {
-price = price - 100;
+else {
+price = 0;
+$(priceBlock).text(price)
 }
-if (check3.checked) {
-price = price + 100;
-} else {
-price = price - 100;
-}
-if (check4.checked) {
-price = price + 100;
-} else {
-price = price - 100;
-}
-if (check5.checked) {
-price = price + 100;
-} else {
-price = price - 100;
-}
-if (check6.checked) {
-price = price + 100;
-} else {
-price = price - 100;
-}
-if (check7.checked) {
-price = price + 100;
-} else {
-price = price - 100;
-}
-
-
-
 });
 
+var price = 0;
+var priceBlock = $('.cost-span');
+var armch = $('#11');
+armch.on('change', function() {
+console.log(123)
+if (armch.prop("checked")) {
+price = price + 70;
+console.log(price);
+$(priceBlock).text(price)
+}
+else {
+price = 0;
+$(priceBlock).text(price)
+}
+});
+var price = 0;
+var priceBlock = $('.cost-span');
+var mat = $('#12');
+mat.on('change', function() {
+console.log(123)
+if (mat.prop("checked")) {
+price = price + 200;
+console.log(price);
+$(priceBlock).text(price)
+}
+else {
+price = 0;
+$(priceBlock).text(price)
+}
+});
+var price = 0;
+var priceBlock = $('.cost-span');
+var chair = $('#13');
+chair.on('change', function() {
+console.log(123)
+if (chair.prop("checked")) {
+price = price + 150;
+console.log(price);
+$(priceBlock).text(price)
+}
+else {
+price = 0;
+$(priceBlock).text(price)
+}
+});
+var price = 0;
+var priceBlock = $('.cost-span');
+var carp = $('#14');
+carp.on('change', function() {
+console.log(123)
+if (carp.prop("checked")) {
+price = price + 20000;
+console.log(price);
+$(priceBlock).text(price)
+}
+else {
+price = 0;
+$(priceBlock).text(price)
+}
+});
+var price = 0;
+var priceBlock = $('.cost-span');
+var puf = $('#15');
+puf.on('change', function() {
+console.log(123)
+if (puf.prop("checked")) {
+price = price + 134;
+console.log(price);
+$(priceBlock).text(price)
+}
+else {
+price = 0;
+$(priceBlock).text(price)
+}
+});
+var price = 0;
+var priceBlock = $('.cost-span');
+var kit = $('#16');
+kit.on('change', function() {
+console.log(123)
+if (kit.prop("checked")) {
+price = price + 100;
+console.log(price);
+$(priceBlock).text(price)
+}
+else {
+price = 0;
+$(priceBlock).text(price)
+}
+});
+ let total = (sofa + armch + mat + chair + carp + puf + kit);
+ let persent 
 
-
-
-
-
-
+if (total >= 200) {
+percent = 85;
+$('skidka-span').text(100 - persent)
+}
 
 });
 
